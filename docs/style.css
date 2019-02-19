@@ -1,13 +1,18 @@
 
 /* Global Styles */
-html {
-    min-height: 100%;
+* {
     margin: 0;
     padding: 0;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     min-height: 100%;
+    background-color: #D8D8F6;
+    margin-bottom: 10rem;
 }
 
 .container {
@@ -21,24 +26,30 @@ body {
 h1 {
     width: 100vw;
     text-align: center;
+    background-color: #1D263B;
+    color: #D8D8F6;
+    padding: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* timeline styles */
 /* timeline container */
 .tl-container {
     width: 50px;
+    margin-left: 1rem;
 }
 
 /* Line */
 .line {
     width: 5px;
     min-height: 100%;
-    background-color: black;
+    background-color: #1D263B;
     margin-left: 45%;
 }
 /* Setting background/style for year */
 .year-div {
-    background-color: hsl(331, 39%, 12%);
+    background-color: #1D263B;
     border-radius: 25px;
     height: 50px;
     width: 100%;
@@ -46,7 +57,7 @@ h1 {
 }
 /* year styles */
 .year {
-    color: white;
+    color: #D8D8F6;
     margin: auto;
 }
 
@@ -56,13 +67,44 @@ h1 {
     .tl-container {
         position: relative;
         left: 48vw;
+        margin: 0;
     }
 }
 
 
-
+/* Styling the whole year's event div*/ 
 .event-div {
     box-sizing: border-box;
-    width: 45vw;
-    padding: 20px;
+    width: 80vw;
+    padding: 3.5rem 1rem;
+    margin: 0 auto;
+}
+/* individual events */ 
+.event {
+    background-color: #445A8C;
+    color: #CECDD3;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+/* children of the event h3 & p */
+.event * {
+    margin: 1rem auto;
+}
+
+/* media query for events || tablets & desktop */
+
+@media only screen and (min-width: 600px) {
+    .event-div {
+        width: 45vw;
+        margin: 0;
+    }
+    .event-l {
+        position: relative;
+        left: -5vw;
+    }
+    .event-r {
+        position: relative;
+        right: -48vw;
+    }
 }
