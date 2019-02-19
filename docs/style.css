@@ -1,0 +1,68 @@
+
+/* Global Styles */
+html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header */
+
+h1 {
+    width: 100vw;
+    text-align: center;
+}
+
+/* timeline styles */
+/* timeline container */
+.tl-container {
+    width: 50px;
+}
+
+/* Line */
+.line {
+    width: 5px;
+    min-height: 100%;
+    background-color: black;
+    margin-left: 45%;
+}
+/* Setting background/style for year */
+.year-div {
+    background-color: hsl(331, 39%, 12%);
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+/* year styles */
+.year {
+    color: white;
+    margin: auto;
+}
+
+
+/* Media query for timeline || tablets & desktops */
+@media only screen and (min-width: 600px) {
+    .tl-container {
+        position: relative;
+        left: 48vw;
+    }
+}
+
+
+
+.event-div {
+    box-sizing: border-box;
+    width: 45vw;
+    padding: 20px;
+}
